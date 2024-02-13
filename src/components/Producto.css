@@ -1,0 +1,54 @@
+.containerProducto {
+    background-color: rgb(238, 226, 112);
+    margin: 10px;
+    width: 250px;
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center; 
+    color: rgb(0, 0, 0);
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    padding: 10px;
+    border-radius: 40px;
+}
+
+.containerProducto img{
+    width: 200px;
+    height: 200px;
+    border: 2px solid rgb(204, 174, 75);
+    border-radius: 40px;
+    margin: 10px;
+}
+
+.containerProducto img:hover{
+    transition: 150ms ease all;
+    transform: scale(1.1);
+    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+}
+
+.containerProducto img:not(:hover){
+    transition: 150ms ease all;
+}
+
+.containerProducto button{
+    width: auto;
+    height: 30px;
+    background-color: rgb(186, 186, 186);
+    border: none;
+    border-radius: 5px;
+    margin: 10px;
+    font-size: 15px;
+}
+
+.containerProducto button:hover{
+    background-color: rgba(155, 121, 8, 0.467);
+    transition: 150ms ease all;
+    font-size: 18px;
+    color: rgb(255, 255, 255);
+    box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
+}
+
+.containerProducto button:not(:hover){
+    transition: 150ms ease all;
+}

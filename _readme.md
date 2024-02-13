@@ -7,9 +7,11 @@
 
 #### --- Cosas que me faltan para la tienda ---
 
-* [ ] Hacer que se contabilizen los productos si ya fue añadido anteriormente.
-* [ ] Filtrar los productos a traves de un buscador.
-* [ ] Hacer diseño de la pagina.
+* [x] Hacer que se **cuenten los productos** que ya fueron añadidos anteriormente.
+* [ ] **Filtrar los productos** a traves de un buscador.
+* [ ] Hacer **diseño** de la pagina.
+* [x] Permitir al usuario que sume cuantos quiere tambien en el carrito.
+* [ ] Hacer la implementacion del boton para pagar.
 ___
 
 #### --- Errores que siento que cometí en el proyecto ---
@@ -19,6 +21,13 @@ ___
 ### --- Commits --- 
 
 > Del actual al antiguo
+
+| **'modificando Carrito y diseño'** - Fecha 13/02 |
+
+* Hice para que los productos que se añadan al carrito, si ya fueron añadidos antes, no se agregen sino que se sumen.
+* Tambien hice la opcion de aumentar o dismunuir la cantidad de un producto dentro del Carrito.
+* Hice el diseño de los productos pero no estoy satisfecho, lo voy a cambiar. Quiero hacer un diseño mas mercadolibre.
+* Cree los archivos .css y ProductoEnCarrito.jsx, para que no se me llene tanto de codigo el Carrito.
 
 | **'haciendo la logica'** - Fecha 12/02 |
 
