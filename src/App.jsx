@@ -1,7 +1,6 @@
 import { useState } from 'react'
-import './App.css'
 import ListaDeProductos from './components/ListaDeProductos'
-import Carrito from './components/Carrito';
+import NavBar from './components/NavBar';
 
 
 function App() {
@@ -28,13 +27,17 @@ function App() {
   }
 
   const [productosCarrito,setProductoCarrito] = useState([]);   //Productos del carrito.
-  const [isCarritoOculto,setCarritoOculto] = useState(true);    //Ocultar carrito.
 
   return (
     <>
-      <ListaDeProductos agregarProductoAlCarrito={agregarProducto}></ListaDeProductos>
-      <button onClick={() => setCarritoOculto(!isCarritoOculto)}>Ver Carrito</button>
-      <Carrito ocultado={isCarritoOculto} productosEnCarrito={productosCarrito} setProductos={setProductoCarrito} modCantProd={modCantProductoCarrito}></Carrito>
+      <NavBar 
+        productosAlCarrito={productosCarrito} 
+        setProductoAlCarrito={setProductoCarrito} 
+        modCantProductoAlCarrito={modCantProductoCarrito}
+      />
+      <ListaDeProductos 
+        agregarProductoAlCarrito={agregarProducto}
+      />
     </>
   )
 }

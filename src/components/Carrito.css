@@ -1,0 +1,33 @@
+.containerCarrito{
+    position: absolute;
+    right: 0; 
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+.containerCarrito h2{
+    margin-right: 40px;
+}
+
+.containerBtnPagar{
+    position: absolute;
+    right: 20px;
+    margin-top: 10px;
+}
+
+.containerBtnPagar button{
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    border: none;
+    width: auto;
+    height: 30px;
+    font-size: 17px;
+}
+
+.containerBtnPagar button:hover{
+    transition: 250ms ease all;
+    background-color: rgb(84, 97, 128);
+    color: white;
+}
+
+.containerBtnPagar button:not(:hover){
+    transition: 250ms ease all;
+}

@@ -9,9 +9,10 @@
 
 * [x] Hacer que se **cuenten los productos** que ya fueron añadidos anteriormente.
 * [ ] **Filtrar los productos** a traves de un buscador.
-* [ ] Hacer **diseño** de la pagina.
+* [x] Hacer **diseño** principal de la pagina.
 * [x] Permitir al usuario que sume cuantos quiere tambien en el carrito.
-* [ ] Hacer la implementacion del boton para pagar.
+* [ ] Hacer la implementacion del boton para pagar y poner costo total del carrito.
+* [ ] Poner descripcion de los productos e implementarlo en el front.
 ___
 
 #### --- Errores que siento que cometí en el proyecto ---
@@ -21,6 +22,12 @@ ___
 ### --- Commits --- 
 
 > Del actual al antiguo
+
+| **'termine diseño principal'** - Fecha 14/02 |
+
+* Hoy me enfoque solo en la parte de front, cree los archivos .css.
+* Hice el header con el boton del carrito funcional.
+* Modifique el diseño de como se veia la lista de productos, al final la termine haciendo al estilo mercado libre.
 
 | **'modificando Carrito y diseño'** - Fecha 13/02 |
 

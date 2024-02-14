@@ -1,54 +1,72 @@
 .containerProducto {
-    background-color: rgb(238, 226, 112);
-    margin: 10px;
-    width: 250px;
+    background-color: rgb(253, 253, 253);
+    width: 800px;
     display: flex;
-    flex-direction: column;
     align-items: center;
     text-align: center; 
-    color: rgb(0, 0, 0);
-    font-size: 20px;
-    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
     padding: 10px;
-    border-radius: 40px;
+    border: 1px inset rgba(128, 128, 128, 0.093);
+    border-radius: 10px;
 }
 
 .containerProducto img{
-    width: 200px;
-    height: 200px;
-    border: 2px solid rgb(204, 174, 75);
-    border-radius: 40px;
+    width: 300px;
+    height: 300px;
+    border: 2px solid rgb(207, 236, 255);
+    border-radius: 10px;
     margin: 10px;
 }
 
 .containerProducto img:hover{
     transition: 150ms ease all;
-    transform: scale(1.1);
-    box-shadow: 0 0px 20px rgba(255, 255, 255, 0.5);
+    transform: scale(1.05);
+    border-color: rgb(148, 212, 255);
+    box-shadow: 0 0px 20px rgba(216, 216, 216, 0.5);
 }
 
 .containerProducto img:not(:hover){
     transition: 150ms ease all;
 }
 
-.containerProducto button{
-    width: auto;
-    height: 30px;
-    background-color: rgb(186, 186, 186);
-    border: none;
-    border-radius: 5px;
-    margin: 10px;
-    font-size: 15px;
+.containerInfoProducto{
+    display: flex;
+    flex-direction: column;
+    width: 500px;
+    align-items: baseline;
+    gap: 60px;
+    margin-left: 20px;
+    color: rgb(0, 0, 0);
+    font-size: 30px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
 }
 
-.containerProducto button:hover{
-    background-color: rgba(155, 121, 8, 0.467);
+#btn-anadir-carrito{
+    width: auto;
+    height: 40px;
+    background-color: rgb(87, 170, 253);
+    color: white;
+    border: none;
+    border-radius: 5px;
+    align-self: flex-end;
+    margin: 10px;
+    font-size: 20px;
+    font-family: 'Franklin Gothic Medium', 'Arial Narrow', Arial, sans-serif;
+}
+
+#btn-anadir-carrito:hover{
+    background-color: rgb(133, 198, 255);
     transition: 150ms ease all;
-    font-size: 18px;
+    font-size: 21px;
     color: rgb(255, 255, 255);
     box-shadow: 0 0 10px rgba(255, 255, 255, 0.5);
 }
 
-.containerProducto button:not(:hover){
+#btn-anadir-carrito:not(:hover){
     transition: 150ms ease all;
+}
+
+#btn-anadir-carrito:active{
+    background-color: rgb(0, 132, 255);
+    color: rgb(193, 225, 255);
+    transform: scale(0.97);
 }

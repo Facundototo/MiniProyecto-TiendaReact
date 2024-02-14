@@ -1,5 +1,6 @@
 import React, { useState } from "react";
 import ProductoEnCarrito from "./ProductoEnCarrito";
+import './Carrito.css';
 
 export default function Carrito({productosEnCarrito = [],ocultado,setProductos,modCantProd}){
 
@@ -11,15 +12,23 @@ export default function Carrito({productosEnCarrito = [],ocultado,setProductos,m
 
     return(
         <>
-            <div hidden={ocultado}>
+            <div hidden={ocultado} className="containerCarrito">
                 {(productosEnCarrito.length === 0) ?
                     (<h2>No hay productos en el carrito</h2>)
                     :
                     (<>
                         {productosEnCarrito.map((producto,index) => (
-                            <ProductoEnCarrito key={index} producto={producto} index={index} borrar={handleBorrar} modificarCantidad={modCantProd}></ProductoEnCarrito>
+                            <ProductoEnCarrito 
+                                key={index}
+                                producto={producto} 
+                                index={index} 
+                                borrar={handleBorrar} 
+                                modificarCantidad={modCantProd}
+                            />
                         ))}
-                        <button>Pagar</button>  
+                        <div className="containerBtnPagar">
+                            <button>Pagar</button> 
+                        </div> 
                     </>)
                 }             
             </div>

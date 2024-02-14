@@ -1,0 +1,66 @@
+header{
+    display: flex;
+    width: 100%;
+    height: 70px;
+    background-color: rgb(53, 61, 80);
+    margin-bottom: auto;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.containerTituloIcono{
+    display: flex;
+    margin-left: 20px;
+}
+
+.containerTituloIcono h1{
+    color: rgb(137, 162, 220);
+    margin-left: 15px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+}
+
+#icon-react{
+    align-self: center;
+    margin-top: 2px;
+    width: 45px;
+    height: 45px;
+    color: rgb(137, 162, 220);
+}
+
+header input{
+    font-size: 19px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    margin-right: 100px;
+    width: 500px;
+    height: 40px;
+    border-radius: 15px;
+    border: none;
+}
+
+header button {
+    margin-right: 30px;
+    width: 45px;
+    height: 45px;
+    background-color: rgb(53, 61, 80);
+    border: none;
+    border-radius: 5px;
+}
+
+header button:hover {
+    transition: 150ms ease all;
+    background-color: rgb(86, 104, 145);
+}
+
+header button:not(:hover){
+    transition: 250ms ease all;
+}
+
+header button:active{
+    background-color: rgb(108, 130, 181);
+}
+
+#icon-cart{
+    width: 25px;
+    height: 25px;
+    color: white;
+}

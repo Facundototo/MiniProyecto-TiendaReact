@@ -1,0 +1,63 @@
+.containerProductoCarrito{
+    display: flex;
+    gap: 40px;
+    align-items: center;
+    justify-content: flex-end;
+    margin-right: 20px;
+    font-family: 'Gill Sans', 'Gill Sans MT', Calibri, 'Trebuchet MS', sans-serif;
+    color: rgba(0, 0, 0, 0.51);
+    background-color: rgb(242, 242, 242);
+}
+
+.containerProductoCarrito img{
+    width: 50px;
+    height: 50px;
+    border: 1px solid rgba(0, 0, 0, 0.114);
+}
+
+.containerProductoCarrito h3{
+    font-size: 16px;
+    max-width: 100px;
+    white-space: nowrap;
+    flex-shrink: 0; 
+    margin-right: 40px;
+}
+
+.containerProductoCarrito p{
+    max-width: 20px;
+    flex-shrink: 0; 
+    margin-right: 10px;
+}
+
+.containerModCantProducto{
+    display: flex;
+    align-items: center;
+}
+
+.containerModCantProducto button{
+    margin: 5px;
+    width: 20px;
+    height: 20px;
+    border: none;
+    font-size: 17px;
+    background-color: rgb(219, 219, 219);
+}
+
+#btn-borrar{
+    width: 25px;
+    height: 25px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 10px;
+    color: rgb(146, 0, 0);
+}
+
+#btn-borrar:hover{
+    background-color: rgb(84, 97, 128);
+    transition: 150ms ease all;
+    color: white;
+}
+
+#btn-borrar:not(:hover){
+    transition: 150ms ease all;
+}
