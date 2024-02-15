@@ -8,7 +8,7 @@
 #### --- Cosas que me faltan para la tienda ---
 
 * [x] Hacer que se **cuenten los productos** que ya fueron añadidos anteriormente.
-* [ ] **Filtrar los productos** a traves de un buscador.
+* [x] **Filtrar los productos** a traves de un buscador.
 * [x] Hacer **diseño** principal de la pagina.
 * [x] Permitir al usuario que sume cuantos quiere tambien en el carrito.
 * [ ] Hacer la implementacion del boton para pagar y poner costo total del carrito.
@@ -22,6 +22,10 @@ ___
 ### --- Commits --- 
 
 > Del actual al antiguo
+
+| **'buscar producto'** - Fecha 15/02 |
+
+* Hoy hice solo que se puedan filtrar los productos, no es perfecto porque no se basa en palabras sino en los caracteres.
 
 | **'termine diseño principal'** - Fecha 14/02 |
 

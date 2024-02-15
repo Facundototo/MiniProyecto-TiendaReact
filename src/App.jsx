@@ -27,6 +27,7 @@ function App() {
   }
 
   const [productosCarrito,setProductoCarrito] = useState([]);   //Productos del carrito.
+  const [valorBusqueda,setValorBusqueda] = useState('');
 
   return (
     <>
@@ -34,9 +35,11 @@ function App() {
         productosAlCarrito={productosCarrito} 
         setProductoAlCarrito={setProductoCarrito} 
         modCantProductoAlCarrito={modCantProductoCarrito}
+        setValorBusqueda={setValorBusqueda}
       />
       <ListaDeProductos 
         agregarProductoAlCarrito={agregarProducto}
+        valorDeBusqueda = {valorBusqueda}
       />
     </>
   )
