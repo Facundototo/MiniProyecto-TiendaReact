@@ -11,17 +11,22 @@
 * [x] **Filtrar los productos** a traves de un buscador.
 * [x] Hacer **diseño** principal de la pagina.
 * [x] Permitir al usuario que sume cuantos quiere tambien en el carrito.
-* [ ] Hacer la implementacion del boton para pagar y poner costo total del carrito.
-* [ ] Poner descripcion de los productos e implementarlo en el front.
-___
-
-#### --- Errores que siento que cometí en el proyecto ---
+* [x] Hacer la implementacion del boton para pagar y poner costo total del carrito.
+* [ ] *Implementar una BD para fetchear los productos desde ahi - mas adelante*.
+* [ ] *Hacer un sistema de label/categorias de productos - mas adelante*.
 
 ___
 
 ### --- Commits --- 
 
 > Del actual al antiguo
+
+| **'info total del carrito y diseño'** - Fecha 16/02 |
+
+* Hice un nuevo componente, InfoTotal, dentro de Carrito.jsx, que se complementa obviamente con el componente Carrito.
+* Hice algunos ajustes en cuanto al diseño del carrito.
+* Tache un punto de cosas que me faltan, porque no lo sentia tan necesario de hacer. 
+* Anote unos puntos que por ahi mas adelante haga.
 
 | **'buscar producto'** - Fecha 15/02 |
 

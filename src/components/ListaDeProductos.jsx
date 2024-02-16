@@ -8,7 +8,7 @@ export default function ListaDeProductos({agregarProductoAlCarrito,valorDeBusque
     const getIdProducto = (id) => {     //Este metodo es llamado en Producto.
         agregarProductoAlCarrito(productos.find(producto => producto.id === id));       //Encuentro el producto y se lo envio al metodo de App.
     }
-
+    //Busco los productos que coincidan con el valor que ingreso el usuario.
     let productosFiltrados = productos.filter(producto => valorDeBusqueda.toLowerCase() === ((producto.nombre).slice(0,valorDeBusqueda.length)).toLowerCase());
 
     return (

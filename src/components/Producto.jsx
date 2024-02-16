@@ -7,8 +7,8 @@ export default function Producto({imagenURL,nombre,precio,agregarAlCarrito,id}) 
             <div className="containerProducto">
                 <img src={imagenURL} alt={'imagen'+nombre}/>
                 <div className="containerInfoProducto">
-                    <label>{nombre}</label>
-                    <label>${precio}</label>
+                    <p>{nombre}</p>
+                    <p>${precio}</p>
                     <button id="btn-anadir-carrito" onClick={() => agregarAlCarrito(id)}>Anadir al Carrito</button>
                 </div>
             </div>

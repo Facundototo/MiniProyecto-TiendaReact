@@ -25,14 +25,12 @@ export default function NavBar({productosAlCarrito,setProductoAlCarrito,modCantP
                     <FontAwesomeIcon id="icon-cart" icon={faCartShopping} />
                 </button>
             </header>
-            <div>
-                <Carrito 
-                    ocultado={isCarritoOculto} 
-                    productosEnCarrito={productosAlCarrito} 
-                    setProductos={setProductoAlCarrito} 
-                    modCantProd={modCantProductoAlCarrito}
-                ></Carrito>
-            </div>
+            <Carrito 
+                ocultado={isCarritoOculto} 
+                productosEnCarrito={productosAlCarrito} 
+                setProductos={setProductoAlCarrito} 
+                modCantProd={modCantProductoAlCarrito}
+            />
         </>
     );
 
