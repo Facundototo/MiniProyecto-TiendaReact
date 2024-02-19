@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import {faReact} from '@fortawesome/free-brands-svg-icons'
 
-export default function NavBar({productosAlCarrito,setProductoAlCarrito,modCantProductoAlCarrito,setValorBusqueda}){
+export default function NavBar({productosAlCarrito,setValorBusqueda}){
 
     const handleChangeBusqueda = (e) => {
         setValorBusqueda(e.target.value);
@@ -28,8 +28,6 @@ export default function NavBar({productosAlCarrito,setProductoAlCarrito,modCantP
             <Carrito 
                 ocultado={isCarritoOculto} 
                 productosEnCarrito={productosAlCarrito} 
-                setProductos={setProductoAlCarrito} 
-                modCantProd={modCantProductoAlCarrito}
             />
         </>
     );

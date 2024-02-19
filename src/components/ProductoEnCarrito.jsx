@@ -1,9 +1,13 @@
-import React from "react";
+import React, { useContext } from "react";
 import './ProductoEnCarrito.css';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome';
 import { faX } from "@fortawesome/free-solid-svg-icons";
+import { ModCantProdContext } from "../assets/Context";
 
-export default function ProductoEnCarrito({producto = [],index,borrar,modificarCantidad}) {
+export default function ProductoEnCarrito({producto = [],index,borrar}) {
+
+    const modificarCantidad = useContext(ModCantProdContext);   
+
     return(
         <div key={index} className="containerProductoCarrito">
             <img src={producto.imagenURL} alt="imagen" />

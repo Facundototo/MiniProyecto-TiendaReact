@@ -1,5 +1,7 @@
 import ProductoEnCarrito from "./ProductoEnCarrito";
 import './Carrito.css';
+import { useContext } from "react";
+import { DispatchContext } from "../assets/Context";
 
 
 export function InfoTotal({productos,onClickPagar}){
@@ -21,12 +23,21 @@ export function InfoTotal({productos,onClickPagar}){
     )
 }
 
-export default function Carrito({productosEnCarrito = [],ocultado,setProductos,modCantProd}){
+export default function Carrito({productosEnCarrito = [],ocultado}){
 
-    const handleBorrar = (index) => {       
-        let productosCarritoAct = [...productosEnCarrito];       //Creo otra variable para no modificar la prop.
-        productosCarritoAct.splice(index,1);    //Borro el producto con el index.
-        setProductos(productosCarritoAct);      //Actualizo el carrito con el state de App.
+    const dispatch = useContext(DispatchContext);
+
+    const handleBorrar = (index) => {      
+        dispatch({
+            type: 'borrar-producto',
+            indexProducto:index
+        })
+    }
+
+    const handlePagarCarrito = () => {
+        dispatch({
+            type: 'pagar-carrito'
+        })
     }
 
     let productosAnadidosAlCarrito = 
@@ -36,7 +47,6 @@ export default function Carrito({productosEnCarrito = [],ocultado,setProductos,m
                 producto={producto} 
                 index={index} 
                 borrar={handleBorrar} 
-                modificarCantidad={modCantProd}
             />
         ));
 
@@ -48,7 +58,7 @@ export default function Carrito({productosEnCarrito = [],ocultado,setProductos,m
                 :
                 (<>
                     {productosAnadidosAlCarrito}
-                    <InfoTotal productos={productosEnCarrito} onClickPagar={() => {setProductos([])}}/> 
+                    <InfoTotal productos={productosEnCarrito} onClickPagar={handlePagarCarrito}/>    
                 </>)
             }             
         </div>
