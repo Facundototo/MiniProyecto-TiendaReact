@@ -18,7 +18,7 @@ export default function NavBar({setValorBusqueda}){
             <header>
                 <div className="containerTituloIcono">
                     <FontAwesomeIcon id="icon-react" icon={faReact} />
-                    <h1>Libre Mercado</h1>
+                    <h1>Tienda React</h1>
                 </div>
                 <input name="input-buscar" onChange={ e => handleChangeBusqueda(e)} placeholder="Busca un producto..." type="text"/>
                 <button onClick={() => setCarritoOculto(!isCarritoOculto)}>

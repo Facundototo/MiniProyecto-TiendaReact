@@ -1,8 +1,13 @@
 ## Mini-Proyecto - Tienda - 2024
 
-> [!NOTE] > _El codigo esta comentado de explicaciones._
+> [!NOTE]
+> _El codigo esta comentado de explicaciones._
 
 > **_Practica en React_**
+
+#### --- Vista Previa ---
+
+![vistaPreviaWeb](vistaPreviaWeb.PNG)
 
 #### --- Cosas que me faltan para la tienda ---
 
