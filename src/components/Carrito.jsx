@@ -1,7 +1,6 @@
 import ProductoEnCarrito from "./ProductoEnCarrito";
 import './Carrito.css';
-import { useContext } from "react";
-import { DispatchContext } from "../assets/Context";
+import { useCarritoDispatch,useProductosCarrito } from './CarritoProvider';
 
 
 export function InfoTotal({productos,onClickPagar}){
@@ -23,9 +22,10 @@ export function InfoTotal({productos,onClickPagar}){
     )
 }
 
-export default function Carrito({productosEnCarrito = [],ocultado}){
+export default function Carrito({ocultado}){
 
-    const dispatch = useContext(DispatchContext);
+    const dispatch = useCarritoDispatch();      //Uso los hooks personalizados.
+    const productosEnCarrito = useProductosCarrito();
 
     const handleBorrar = (index) => {      
         dispatch({

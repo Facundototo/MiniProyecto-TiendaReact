@@ -5,7 +5,7 @@ import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import { faCartShopping } from '@fortawesome/free-solid-svg-icons'
 import {faReact} from '@fortawesome/free-brands-svg-icons'
 
-export default function NavBar({productosAlCarrito,setValorBusqueda}){
+export default function NavBar({setValorBusqueda}){
 
     const handleChangeBusqueda = (e) => {
         setValorBusqueda(e.target.value);
@@ -20,15 +20,12 @@ export default function NavBar({productosAlCarrito,setValorBusqueda}){
                     <FontAwesomeIcon id="icon-react" icon={faReact} />
                     <h1>Libre Mercado</h1>
                 </div>
-                <input onChange={ e => handleChangeBusqueda(e)} placeholder="Busca un producto..." type="text"/>
+                <input name="input-buscar" onChange={ e => handleChangeBusqueda(e)} placeholder="Busca un producto..." type="text"/>
                 <button onClick={() => setCarritoOculto(!isCarritoOculto)}>
                     <FontAwesomeIcon id="icon-cart" icon={faCartShopping} />
                 </button>
             </header>
-            <Carrito 
-                ocultado={isCarritoOculto} 
-                productosEnCarrito={productosAlCarrito} 
-            />
+            <Carrito ocultado={isCarritoOculto}/>
         </>
     );
 

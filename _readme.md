@@ -18,13 +18,19 @@
 
 #### --- Errores que siento que cometí en el proyecto ---
 
-- La herramienta de React, StrictMode me esta duplicando la cantidad de productos que se suman al carrito. Esto fue cuando empece a utilizar useReducer y useContext. Hay algo que no le esta gustando. Tengo que verlo, por ahora desactive el StrictMode.
+- **SOLUCIONADO** - La herramienta de React, StrictMode me esta duplicando la cantidad de productos que se suman al carrito. Esto fue cuando empece a utilizar useReducer y useContext. Hay algo que no le esta gustando. Tengo que verlo, por ahora desactive el StrictMode.
 
 ---
 
 ### --- Commits ---
 
 > Del actual al antiguo
+
+| **'corrigiendo codigo y mas limpieza'** - Fecha 20/02 |
+
+- Corregi el codigo que me estaba dando mal el StrictMode respecto a la cantidad de x producto. Aun asi creo que hay otras deficiencias pero no las logro encontrar.
+- Limpie mas el codigo borrando los 2 archivos que cree ayer, y los compacte todo en 1, el useReducer() y el createContext(). Me di cuenta de que lo podia hacer mas limpio todavia cuando lei la documentacion de [React](https://es.react.dev/learn/scaling-up-with-reducer-and-context). Entonces cree el componente CarritoProvider.jsx.
+- En cuanto a corregir habia errores de mi parte que modificaban mal la variable de estado. Empece a usar .map() y filter() para esos casos.
 
 | **'hooks useContext y useReducer'** - Fecha 19/02 |
 
