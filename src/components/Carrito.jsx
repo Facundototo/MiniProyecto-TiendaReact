@@ -1,22 +1,24 @@
 import ProductoEnCarrito from "./ProductoEnCarrito";
 import './Carrito.css';
 import { useCarritoDispatch,useProductosCarrito } from './CarritoProvider';
-
+import { useEffect, useState } from "react";
 
 export function InfoTotal({productos,onClickPagar}){
 
-    let precioTotal = 0;
-    let cantTotal = 0;
+    const [total,setTotal] = useState({cant:0,precio:0});
 
-    if(productos.length > 0){
-        precioTotal = (productos.map(producto => producto.precio*producto.cantidad).reduce((acumulador,valorActual) => acumulador+valorActual)).toFixed(2);     //Costo total.
-        cantTotal = productos.map(producto => producto.cantidad).reduce((acumulador,valorActual) => acumulador+valorActual);    //Cantidad total.
-    }
+    useEffect(() => {
+        //Recorro el array productos y retorna otro con el resultado del precio, ese array le hago un reduce que acumula los valores.
+        const precioTotal = (productos.map(producto => producto.precio*producto.cantidad).reduce((acumulador,valorActual) => acumulador+valorActual)).toFixed(2);     //Costo total.
+        const cantTotal = productos.map(producto => producto.cantidad).reduce((acumulador,valorActual) => acumulador+valorActual);    //Cantidad total.
+
+        setTotal({cant:cantTotal,precio:precioTotal})
+    },[productos])
 
     return(
         <div className="containerBtnPagar">
-            <p>Cantidad - {cantTotal}</p>
-            <p>Total - ${precioTotal}</p>
+            <p>Cantidad - {total.cant}</p>
+            <p>Total - ${total.precio}</p>
             <button onClick={onClickPagar}>Pagar</button> 
         </div> 
     )

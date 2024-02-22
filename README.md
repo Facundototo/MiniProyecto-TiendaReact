@@ -31,6 +31,12 @@
 
 > Del actual al antiguo
 
+| **'implementando hook useEffect'** - Fecha 22/02 |
+
+- Implemente el hook useEffect que no lo habia tenido en mente cuando inicie este proyecto.
+- Se me ocurrio meterlo en el componente InfoTotal (archivo Carrito.jsx), ya que cada vez que se modifica la variable de estado productosCarrito se llama al Efecto y hace el calculo de la cantidad total y del precio total a pagar.
+- Dejo la documentacion de [React respecto al hook useEffect](https://es.react.dev/learn/synchronizing-with-effects).
+
 | **'corrigiendo codigo y mas limpieza'** - Fecha 20/02 |
 
 - Corregi el codigo que me estaba dando mal el StrictMode respecto a la cantidad de x producto. Aun asi creo que hay otras deficiencias pero no las logro encontrar.
