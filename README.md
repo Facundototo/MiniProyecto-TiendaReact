@@ -16,8 +16,6 @@
 - [x] Hacer **diseño** principal de la pagina.
 - [x] Permitir al usuario que sume cuantos quiere tambien en el carrito.
 - [x] Hacer la implementacion del boton para pagar y poner costo total del carrito.
-- [ ] _Implementar una BD para fetchear los productos desde ahi - mas adelante_.
-- [ ] _Hacer un sistema de label/categorias de productos - mas adelante_.
 
 ---
 
@@ -30,6 +28,10 @@
 ### --- Commits ---
 
 > Del actual al antiguo
+
+| **'borre los 2 items que faltaban'** - Fecha 10/03 |
+
+- Borre los 2 items que faltaban completar, porque voy a hacer otro proyecto que incorpora esos puntos.
 
 | **'implementando hook useEffect'** - Fecha 22/02 |
 
